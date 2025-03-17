@@ -12,11 +12,24 @@
 #define DYNAMIC_KEYMAP_LAYER_COUNT 3
 #define VIAL_COMBO_ENTRIES 4
 #define VIAL_KEY_OVERRIDE_ENTRIES 4
-// #define VIALRGB_ENABLE
-// #define VIALRGB_PROTOCOL_VERSION 1 // Try with version 1 first
 
 // Mac-specific keyboard settings
 #define APPLE_FN_ENABLE
 
 // Other necessary configs for WB32 microcontroller
 #define WEAR_LEVELING_BACKING_SIZE 4096
+
+// RGB matrix configuration
+#define RGB_MATRIX_KEYPRESSES
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 180
+#define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
+#define RGB_MATRIX_STARTUP_HUE 170
+#define RGB_MATRIX_STARTUP_SAT 255
+#define RGB_MATRIX_STARTUP_VAL 180
+
+/* keyboards/gmmk/gmmk3/p65/ansi/keymaps/vial/config.h */
+#pragma once
+
+// Enable rotary encoder support that works with VIAL
+#define ENCODER_RESOLUTION 4
+#define AUDIO_CLICKY

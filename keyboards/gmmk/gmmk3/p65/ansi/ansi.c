@@ -124,10 +124,15 @@
      {1, SW10_CS1, SW10_CS2, SW10_CS3},     // 85 BADGE
  };
 
- led_config_t g_led_config = {
+/* Portion of ansi.c that needs to be updated */
+
+/* The main issue appears to be in the LED matrix configuration */
+/* We need to fix the matrix configuration to correctly map the PG UP LED */
+
+led_config_t g_led_config = {
      {
          { 42, __, __, 62, __, 64, 56, __},
-         { 15, 14, 29, 0,  43, 41, 0,  1 },  // Changed "43, __, __, 1" to "43, 41, 0, 1" with ESC at [1,6]
+         { 15, 14, 29, 0,  43, 41, 0,  1 },  // PG UP LED (41) is in position [1, 5]
          { 16, 28, 30, __, 44, 55, __, 2 },
          { 17, __, 31, __, 45, 54, __, 3 },
          { 18, 19, 32, 33, 46, 47, 5,  4 },

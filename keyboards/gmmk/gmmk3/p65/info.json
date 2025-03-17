@@ -1,4 +1,7 @@
 {
+    "features": {
+        "encoder": true
+    },
     "rgb_matrix": {
         "animations": {
             "alphas_mods": true,
@@ -49,5 +52,13 @@
         },
         "driver": "aw20216s",
         "sleep": true
+    },
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "A9",
+                "pin_b": "A8"
+            }
+        ]
     }
 }
