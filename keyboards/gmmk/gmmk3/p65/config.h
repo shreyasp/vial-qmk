@@ -3,8 +3,6 @@
 // SPI Flash configuration
 #define EXTERNAL_FLASH_SPI_SLAVE_SELECT_PIN C4
 
-#define VIAL_RGB_PROTOCOL 2
-
 // SPI Config for LED Driver
 #define SPI_DRIVER SPIDQ
 #define SPI_SCK_PIN A5

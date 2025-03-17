@@ -6,6 +6,11 @@
       "rows": 14,
       "cols": 8
     },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "A9", "pin_b": "A8", "resolution": 4}
+        ]
+    },
     "layouts": {
       "keymap": [
         [

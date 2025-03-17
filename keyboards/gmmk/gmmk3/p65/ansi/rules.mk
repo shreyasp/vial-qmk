@@ -5,9 +5,11 @@ WEAR_LEVELING_DRIVER = spi_flash
 # Disable unused features to save space
 CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
-SPACE_CADET_ENABLE = no
-GRAVE_ESC_ENABLE = no
-MAGIC_ENABLE = no
+SPACE_CADET_ENABLE = yes
+GRAVE_ESC_ENABLE = yes
+MAGIC_ENABLE = yes
+VIA_ENABLE = yes
+
 
 # Enable additional features
 KEY_OVERRIDE_ENABLE = yes
